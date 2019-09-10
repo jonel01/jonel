@@ -1,19 +1,32 @@
-import React, {Component} from 'react';
-import { styles } from '../layout/Navbar.css';
-import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
+import React, { PureComponent } from 'react';
+import { styles } from '../ComponentStyle/Links.css';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBNavItem, MDBNavLink} from 'mdbreact';
 
-class Links extends Component {
+class Links extends PureComponent {
+    
     render(){
-    return(
-        <div style={styles.container}>
-            <ul style={styles.ul}>
-                <li style={Object.assign({},styles.li, styles.pos)}><NavLink style={styles.link} exact to='/'>Profile</NavLink></li>
-                <li style={styles.li}><NavLink style={styles.link} exact to='/About'>About</NavLink></li>
-                <li style={styles.li}><NavLink style={styles.link} exact to='Skills'>Skills</NavLink></li>
-            </ul>
-        </div>
-    );
-}
+        return(
+            <MDBNavbar color="indigo" dark expand="md" fixed="top">
+                
+            <MDBNavbarBrand to="/">
+            <MDBNavLink style={styles.navLink} exact to='/'>My Portfolio</MDBNavLink>
+            </MDBNavbarBrand>
+
+              <MDBNavbarNav right style={styles.pos}>
+                <MDBNavItem>
+                <MDBNavLink style={styles.navLink} exact to='/' activeStyle={{ color: 'yellow' }}>Profile</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                <MDBNavLink style={styles.navLink} exact to='/About' activeStyle={{ color: 'yellow' }}>About</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                <MDBNavLink style={styles.navLink} exact to='/Skills' activeStyle={{ color: 'yellow' }}>Skills</MDBNavLink>
+                </MDBNavItem>
+              </MDBNavbarNav>
+           
+          </MDBNavbar>
+        );
+    }
 }
 
 export default Links;
