@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
-import { Profile } from '../Component/Profile';
+import React, { PureComponent } from 'react';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
+import Profile from '../Component/Profile';
 import { About } from '../Component/About';
 import { Skills } from '../Component/Skills';
+import Links from '../Component/Links';
 
-import Links  from '../Component/Links';
-class Routing extends Component {
-
+class Routing extends PureComponent {
     render() {
-    return(
-        <Router>
-            <Links/>
-                <Route exact path='/' component={Profile} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/skills' component={Skills} />
-        </Router>
-    )
+        return(
+            <Router>
+                <Links />
+                    <Route exact path='/' component={Profile} />
+                    <Route exact path='/about' component={About} />
+                    <Route exact path='/skills' component={Skills} />
+            </Router>
+        )
 }
 }
 
