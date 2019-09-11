@@ -1,5 +1,5 @@
 export const styles = {
     container: {
-        marginLeft: '30px'
+        marginLeft: '60px'
     }
 }
