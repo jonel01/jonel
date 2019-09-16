@@ -3,10 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "framework7": "^4.5.0",
-=======
->>>>>>> master
     "framework7-react": "^4.5.0",
     "mdbreact": "^4.19.2",
     "react": "^16.9.0",
