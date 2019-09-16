@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Profile from '../Component/Profile';
 import { About } from '../Component/About';
-import { Skills } from '../Component/Skills';
+import Skills from '../Component/Skills';
 import Links from '../Component/Links';
 
 class Routing extends PureComponent {
