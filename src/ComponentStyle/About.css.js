@@ -4,7 +4,7 @@ export const styles = {
         height: '250px',
     },
     aboutMeText: {
-        color: 'white',
+        color: '#212529',
         fontWeight: 'bold',
         fontSize: '100px'
     },
