@@ -5,7 +5,6 @@ import profileImage from '../assets/image/profile.jpg';
 import reactJSLOGO from '../assets/image/reactJSLogo.jpg';
 import facebookLOGO from '../assets/image/facebookLogo.png';
 import instagramLOGO from '../assets/image/instagramLogo.jpeg';
-import twitterLOGO from '../assets/image/twitterLogo.png';
 import frontendLOGO from '../assets/image/frontendLogo.jpg';
 import Typed from 'react-typed';
 
@@ -15,19 +14,19 @@ export default class About extends PureComponent{
             <MDBContainer style={styles.container}>
                 <MDBRow md='12'>
                     <MDBCol md='6' style={styles.aboutMe}>
-                        <h1 style={styles.aboutMeText}>About Me!</h1>
+                        <h1 style={styles.aboutMeText}>ABOUT ME!</h1>
                     </MDBCol>
                     <MDBCol md='6'>
                         <img src={profileImage} style={styles.imageProfile}></img>
                         <MDBContainer style={styles.description}>
-                        <Typed
-                            strings={[`I'm Jonel M. San Diego. Currently living in Abulalas, Hagonoy, Bulacan.`]}
-                            typeSpeed={30}
-                            backSpeed={20}
-                            backDelay={10000}
-                            loop={true}
-                            startDelay={2000}
-                            />
+                            <Typed
+                                strings={[`I'm Jonel M. San Diego. Currently living in Abulalas, Hagonoy, Bulacan.`]}
+                                typeSpeed={30}
+                                backSpeed={20}
+                                backDelay={10000}
+                                loop={true}
+                                startDelay={2000}
+                                />
                         </MDBContainer>
                     </MDBCol>
                 </MDBRow>

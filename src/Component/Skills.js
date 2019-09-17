@@ -52,10 +52,10 @@ export default class Skills extends PureComponent{
                 <MDBRow md='12' style={styles.pos}>
                     {
                         visible ?
-                            
                             <MDBCol md='6'>
                                 <MDBBadge onClick={this.handleHideSkills}>Hide Skills</MDBBadge>
-                            </MDBCol>:
+                            </MDBCol>
+                            :
                             <MDBCol md='6'>
                                 <MDBAnimation type="bounce" delay="2s">
                                     <MDBBadge onClick={this.handleShowSkills}>View Skills</MDBBadge>
@@ -64,10 +64,10 @@ export default class Skills extends PureComponent{
                     }
                     { 
                         boolean ?
-                            
                             <MDBCol md='6'>
                                 <MDBBadge onClick={this.handleHideTechSkill}>Hide Technical Skills</MDBBadge>
-                            </MDBCol>:
+                            </MDBCol>
+                            :
                             <MDBCol md='6'>
                                 <MDBAnimation type="bounce" delay="3s">
                                     <MDBBadge onClick={this.handleShowTechSkill}>View Technical Skills</MDBBadge>
@@ -84,13 +84,14 @@ export default class Skills extends PureComponent{
                                 {
                                     <MDBAnimation type="slideInLeft" delay="1s">
                                         {
-                                skills.map(item =>(
-                                    <MDBRow md='6' style={styles.marginSkills}>{item.skill}</MDBRow>
-                                ))
+                                            skills.map(item =>(
+                                                <MDBRow md='6' style={styles.marginSkills}>{item.skill}</MDBRow>
+                                            ))
                                         }
                                     </MDBAnimation>
                                 }
-                            </MDBContainer>: 
+                            </MDBContainer>
+                            : 
                             <MDBAnimation type="rotateInDownLeft" delay="0s">
                                 <img src={unknownSkills} style={styles.size}></img>
                             </MDBAnimation>
@@ -99,20 +100,21 @@ export default class Skills extends PureComponent{
                     <MDBCol md='6' style={styles.color}>
                         {
                             boolean ?
-                            <MDBContainer style={styles.skillsStyle}>
-                                {
-                                    <MDBAnimation type="slideInRight" delay="0s">
-                                        {
-                                technicalSkills.map(item =>(
-                                    <MDBRow md='6' style={styles.marginSkills}>{renderHTML(item.technicalSkill)}</MDBRow>
-                                ))
-                                        }
-                                    </MDBAnimation>
-                                }
-                            </MDBContainer>:
-                            <MDBAnimation type="rotateInDownRight" delay="1s" >
-                                <img src={unknownTechnicalSkills} style={styles.size}></img>
-                            </MDBAnimation>
+                                <MDBContainer style={styles.skillsStyle}>
+                                    {
+                                        <MDBAnimation type="slideInRight" delay="0s">
+                                            {
+                                                technicalSkills.map(item =>(
+                                                    <MDBRow md='6' style={styles.marginSkills}>{renderHTML(item.technicalSkill)}</MDBRow>
+                                                ))
+                                            }
+                                        </MDBAnimation>
+                                    }
+                                </MDBContainer>
+                                :
+                                <MDBAnimation type="rotateInDownRight" delay="1s" >
+                                    <img src={unknownTechnicalSkills} style={styles.size}></img>
+                                </MDBAnimation>
                         }
                     </MDBCol>
                 </MDBRow>
