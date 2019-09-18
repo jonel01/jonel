@@ -12,6 +12,7 @@ import youTube from '../assets/image/youtube.jpg';
 import npmJS from '../assets/image/npmjs.png';
 
 import Badge from '../Components/Badge';
+import Button from '../Components/Button';
 
 export default class Profile extends PureComponent {
     state = {
@@ -157,13 +158,13 @@ render(){
         {
             visible ?
         <MDBRow style={styles.btnViewInfo}>
-            <MDBBtn 
+            <Button 
                 type="submit" 
                 color="info" 
                 size="lg"
-                onClick={this.btnTypedHandlerHide}>
-                Hide Info
-            </MDBBtn>   
+                onClickBtn={this.btnTypedHandlerHide}
+                btnText='Hide Info'
+            />
             <MDBCol md='12' style={styles.info}>         
                 <Typed style={styles.infoColor}
                 strings={['Hello I am Jonel M. San Diego',
@@ -177,13 +178,13 @@ render(){
         </MDBRow>
         :
         <MDBRow style={styles.btnViewInfo}>
-            <MDBBtn 
+            <Button 
                 type="submit" 
                 color="info" 
                 size="lg"
-                onClick={this.btnTypedHandlerShow}>
-                View Info
-            </MDBBtn>
+                onClickBtn={this.btnTypedHandlerShow}
+                btnText='View Info'
+            />
         </MDBRow>
         }
         
