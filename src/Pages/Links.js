@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { styles } from '../ComponentStyle/Links.css';
+import { styles } from '../pagesStyle/Links.css';
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBNavItem, MDBNavLink} from 'mdbreact';
 
 class Links extends PureComponent {

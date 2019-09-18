@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { skills, technicalSkills } from './Data';
 import { MDBContainer, MDBBadge, MDBRow, MDBCol, MDBAnimation } from 'mdbreact'
-import { styles } from '../ComponentStyle/Skills.css';
+import { styles } from '../pagesStyle/Skills.css';
 import renderHTML from 'react-render-html';
 import unknownSkills from '../assets/image/unknownskills.jpg';
 import unknownTechnicalSkills from '../assets/image/unknowntechnicalskills.jpg';

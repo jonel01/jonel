@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { styles } from '../ComponentStyle/About.css'
+import { styles } from '../pagesStyle/About.css'
 import { MDBContainer, MDBBtn, MDBRow, MDBCol, MDBBadge, MDBAnimation } from "mdbreact";
 import profileImage from '../assets/image/profile.jpg';
 import reactJSLOGO from '../assets/image/reactJSLogo.jpg';

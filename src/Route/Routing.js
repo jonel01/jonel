@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
-import Profile from '../Component/Profile';
-import About from '../Component/About';
-import Skills from '../Component/Skills';
-import Links from '../Component/Links';
+import Profile from '../Pages/Profile';
+import About from '../Pages/About';
+import Skills from '../Pages/Skills';
+import Links from '../Pages/Links';
 
 export default class Routing extends PureComponent {
     render() {

@@ -4,7 +4,7 @@ import unknownImage from '../assets/image/unknown.jpeg';
 import unknownData from '../assets/image/unknowndata.png';
 import Typed from 'react-typed';
 import { MDBContainer, MDBBtn, MDBRow, MDBCol, MDBBadge, MDBAnimation } from "mdbreact";
-import { styles } from '../ComponentStyle/Profile.css';
+import { styles } from '../pagesStyle/Profile.css';
 
 import reactJS from '../assets/image/React-logo.png';
 import stackOverFlow from '../assets/image/stackoverflow.png';
