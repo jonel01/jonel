@@ -11,6 +11,8 @@ import stackOverFlow from '../assets/image/stackoverflow.png';
 import youTube from '../assets/image/youtube.jpg';
 import npmJS from '../assets/image/npmjs.png';
 
+import Badge from '../Components/Badge';
+
 export default class Profile extends PureComponent {
     state = {
         visible: false,
@@ -22,7 +24,7 @@ export default class Profile extends PureComponent {
             { image: youTube },
             { image: npmJS }
         ],
-        time: new Date()
+        time: new Date(),
     };
 
     componentDidMount = () => {
@@ -73,7 +75,6 @@ export default class Profile extends PureComponent {
 
 render(){
     const { visible, boolean, images, photo, time } = this.state
-
     return (
         <MDBContainer style={styles.container}>
             <MDBRow md='12'>
@@ -82,7 +83,11 @@ render(){
                         photo === 0 ?
                     <div>
                         <MDBAnimation type="bounce" delay="1s">
-                            <MDBBadge style={styles.revealPhoto} onClick={() => this.handleImageReveal(1)}>View Photo</MDBBadge>
+                            <Badge 
+                                onClickBadge={() => this.handleImageReveal(1)}
+                                styles = {styles.revealPhoto}
+                                text='View Photo'
+                            />
                         </MDBAnimation>
                         <img 
                             src={unknownImage} 
@@ -91,7 +96,13 @@ render(){
                         />
                     </div>:
                     <div>
-                        <MDBBadge style={styles.revealPhoto} onClick={() => this.handleImageReveal(0)}>Hide Photo</MDBBadge>
+                        <MDBAnimation type="bounce" delay="1s">
+                        <Badge 
+                            onClickBadge={() => this.handleImageReveal(0)}
+                            styles={styles.revealPhoto}
+                            text='Hide Photo'
+                        />
+                        </MDBAnimation>
                             <img 
                                 src={profileImage} 
                                 alt="pic" 
@@ -105,12 +116,11 @@ render(){
                         boolean ? 
                     <MDBContainer md="12">  
                         <MDBRow md="12">
-                            <MDBBadge
-                            onClick={this.btnHideProfileHandler}
-                            style={styles.btnPos}
-                            >
-                                Hide Profile
-                            </MDBBadge>
+                            <Badge 
+                                onClickBadge={this.btnHideProfileHandler}
+                                styles={styles.btnPos}
+                                text='Hide Profile'
+                            />
                         </MDBRow>  
                             <MDBRow md="12" style={styles.pos}>
                                 <MDBAnimation type="fadeInRight" delay="1s" style={styles.stringStyle}>    
@@ -128,12 +138,11 @@ render(){
                     :
                     <MDBContainer md="12">
                         <MDBRow md="12">
-                            <MDBBadge
-                            onClick={this.btnShowProfileHandler}
-                            style={styles.btnPos}
-                            >
-                                View Profile
-                            </MDBBadge>
+                            <Badge 
+                                onClickBadge={this.btnShowProfileHandler}
+                                styles={styles.btnPos}
+                                text='View Profile'
+                            />
                         </MDBRow>
                         <MDBRow md="12">
                             <MDBAnimation type="bounceInDown" delay="1s">

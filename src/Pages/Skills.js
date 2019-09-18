@@ -1,10 +1,12 @@
 import React, { PureComponent } from 'react';
-import { skills, technicalSkills } from './Data';
+import { skills, technicalSkills } from '../Components/Data';
 import { MDBContainer, MDBBadge, MDBRow, MDBCol, MDBAnimation } from 'mdbreact'
 import { styles } from '../pagesStyle/Skills.css';
 import renderHTML from 'react-render-html';
 import unknownSkills from '../assets/image/unknownskills.jpg';
 import unknownTechnicalSkills from '../assets/image/unknowntechnicalskills.jpg';
+
+import Badge from '../Components/Badge';
 
 export default class Skills extends PureComponent{
     state = {
@@ -53,24 +55,36 @@ export default class Skills extends PureComponent{
                     {
                         visible ?
                             <MDBCol md='6'>
-                                <MDBBadge onClick={this.handleHideSkills}>Hide Skills</MDBBadge>
+                                <Badge 
+                                    onClickBadge={this.handleHideSkills}
+                                    text='Hide Skills'
+                                />
                             </MDBCol>
                             :
                             <MDBCol md='6'>
                                 <MDBAnimation type="bounce" delay="2s">
-                                    <MDBBadge onClick={this.handleShowSkills}>View Skills</MDBBadge>
+                                    <Badge 
+                                        onClickBadge={this.handleShowSkills}
+                                        text='View Skills'
+                                    />
                                 </MDBAnimation>
                             </MDBCol> 
                     }
                     { 
                         boolean ?
                             <MDBCol md='6'>
-                                <MDBBadge onClick={this.handleHideTechSkill}>Hide Technical Skills</MDBBadge>
+                                <Badge 
+                                    onClickBadge={this.handleHideTechSkill}
+                                    text='Hide Technical Skills'
+                                />
                             </MDBCol>
                             :
                             <MDBCol md='6'>
                                 <MDBAnimation type="bounce" delay="3s">
-                                    <MDBBadge onClick={this.handleShowTechSkill}>View Technical Skills</MDBBadge>
+                                    <Badge 
+                                        onClickBadge={this.handleShowTechSkill}
+                                        text='View Technical Skills'
+                                    />
                                 </MDBAnimation>
                             </MDBCol>
                     }
