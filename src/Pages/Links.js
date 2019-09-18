@@ -9,7 +9,7 @@ class Links extends PureComponent {
             <MDBNavbar color="indigo" dark expand="md" fixed="top">
                 
               <MDBNavbarBrand to="/">
-                  <MDBNavLink style={styles.navLink} exact to='/'>My Portfolio</MDBNavLink>
+                  <MDBNavLink style={styles.navLink} exact to='/'><strong>My Portfolio</strong></MDBNavLink>
               </MDBNavbarBrand>
 
               <MDBNavbarNav right style={styles.pos}>
@@ -17,10 +17,13 @@ class Links extends PureComponent {
                       <MDBNavLink style={styles.navLink} exact to='/' activeStyle={{ color: 'yellow' }}>Profile</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                      <MDBNavLink style={styles.navLink} exact to='/About' activeStyle={{ color: 'yellow' }}>About</MDBNavLink>
+                      <MDBNavLink style={styles.navLink} exact to='/about' activeStyle={{ color: 'yellow' }}>About</MDBNavLink>
                   </MDBNavItem>
                   <MDBNavItem>
-                      <MDBNavLink style={styles.navLink} exact to='/Skills' activeStyle={{ color: 'yellow' }}>Skills</MDBNavLink>
+                      <MDBNavLink style={styles.navLink} exact to='/skills' activeStyle={{ color: 'yellow' }}>Skills</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                      <MDBNavLink style={styles.navLink} exact to='/projects' activeStyle={{ color: 'yellow' }}>Projects</MDBNavLink>
                   </MDBNavItem>
               </MDBNavbarNav>
            
