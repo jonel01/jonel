@@ -3,7 +3,7 @@ import profileImage from '../assets/image/profile.jpg';
 import unknownImage from '../assets/image/unknown.jpeg';
 import unknownData from '../assets/image/unknowndata.png';
 import Typed from 'react-typed';
-import { MDBContainer, MDBBtn, MDBRow, MDBCol, MDBBadge, MDBAnimation } from "mdbreact";
+import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from "mdbreact";
 import { styles } from '../pagesStyle/Profile.css';
 
 import reactJS from '../assets/image/React-logo.png';
@@ -190,7 +190,7 @@ render(){
         
         <MDBRow>
                 <MDBCol md='12' style={styles.timerContainer}>
-                    <MDBAnimation type="fadeInDown" delay="2s">
+                    <MDBAnimation type="fadeInDown" delay="1.2s">
                         <h2 style={styles.timer}>Time: {time.toLocaleTimeString()}</h2>
                     </MDBAnimation>
                 </MDBCol>
@@ -199,14 +199,18 @@ render(){
         <MDBRow>
             <MDBCol md='12' style={styles.imageContainer}>
                 {
-                    <MDBAnimation type="fadeInUp" delay="2s">
-                    <h2 style={styles.imageText}>My Most Visited Websites</h2>
-                        {
-                    images.map(imageItems =>(
-                        <img src={imageItems.image} style={styles.imgStyle}></img>
-                    ))
-                        }
-                    </MDBAnimation>
+                    <MDBContainer>
+                        <MDBAnimation type="fadeInUp" delay="1.4s">
+                            <h2 style={styles.imageText}>My Most Visited Websites</h2>
+                        </MDBAnimation>
+                        <MDBAnimation type="fadeInUp" delay="1.6s">
+                                {
+                            images.map(imageItems =>(
+                                <img src={imageItems.image} style={styles.imgStyle}></img>
+                            ))
+                                }
+                        </MDBAnimation>
+                    </MDBContainer>
                 }
             </MDBCol>
         </MDBRow>
