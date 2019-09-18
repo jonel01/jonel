@@ -6,7 +6,9 @@ export const styles = {
     aboutMeText: {
         color: '#212529',
         fontWeight: 'bold',
-        fontSize: '100px'
+        fontSize: '95px',
+        fontFamily: 'fantasy',
+        marginLeft: '-80px'
     },
     bottomContainer: {
         marginTop: '60px'
