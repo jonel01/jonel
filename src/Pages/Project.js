@@ -4,6 +4,7 @@ import { MDBContainer, MDBRow, MDBCol, MDBCarousel, MDBCarouselInner, MDBCarouse
 import ProgressBar from '../Components/ProgressBar';
 import Card from '../Components/Card';
 import easytrip from '../assets/image/easytrip.png';
+import replacement from '../assets/image/replacement.jpeg';
 
 class Projects extends PureComponent {
     state = {
@@ -83,7 +84,7 @@ class Projects extends PureComponent {
                                                 delay='1.2s'
                                                 style={styles.paddingCardRight}
                                                 md='4'
-                                                imgSrc={easytrip}
+                                                imgSrc={replacement}
                                                 cardTitle='MSAP'
                                                 cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                 btnText= 'View More'
@@ -94,7 +95,7 @@ class Projects extends PureComponent {
                                                 type='bounceInLeft'
                                                 delay='1.2s'
                                                 md='4'
-                                                imgSrc={easytrip}
+                                                imgSrc={replacement}
                                                 cardTitle='Vwin Baby Admin'
                                                 cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                 btnText= 'View More'
@@ -104,7 +105,7 @@ class Projects extends PureComponent {
                                                 delay='1.4s'
                                                 style={styles.paddingCardCenter}
                                                 md='4'
-                                                imgSrc={easytrip}
+                                                imgSrc={replacement}
                                                 cardTitle='Vwin Baby Mobile'
                                                 cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                 btnText= 'View More'
@@ -114,7 +115,7 @@ class Projects extends PureComponent {
                                                 delay='1.2s'
                                                 style={styles.paddingCardRight}
                                                 md='4'
-                                                imgSrc={easytrip}
+                                                imgSrc={replacement}
                                                 cardTitle='Bliimo Website'
                                                 cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                 btnText= 'View More'
