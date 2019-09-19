@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { skills, technicalSkills } from '../Components/Data';
-import { MDBContainer, MDBBadge, MDBRow, MDBCol, MDBAnimation } from 'mdbreact'
+import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from 'mdbreact'
 import { styles } from '../pagesStyle/Skills.css';
 import renderHTML from 'react-render-html';
 import unknownSkills from '../assets/image/unknownskills.jpg';
@@ -107,7 +107,7 @@ export default class Skills extends PureComponent{
                             </MDBContainer>
                             : 
                             <MDBAnimation type="rotateInDownLeft" delay="0s">
-                                <img src={unknownSkills} style={styles.size}></img>
+                                <img src={unknownSkills} style={styles.size} alt='img'></img>
                             </MDBAnimation>
                         }
                     </MDBCol>
@@ -116,7 +116,7 @@ export default class Skills extends PureComponent{
                             boolean ?
                                 <MDBContainer style={styles.skillsStyle}>
                                     {
-                                        <MDBAnimation type="slideInRight" delay="0s">
+                                        <MDBAnimation style={styles.text} type="slideInRight" delay="0s">
                                             {
                                                 technicalSkills.map(item =>(
                                                     <MDBRow md='6' style={styles.marginSkills}>{renderHTML(item.technicalSkill)}</MDBRow>
@@ -127,7 +127,7 @@ export default class Skills extends PureComponent{
                                 </MDBContainer>
                                 :
                                 <MDBAnimation type="rotateInDownRight" delay="1s" >
-                                    <img src={unknownTechnicalSkills} style={styles.size}></img>
+                                    <img src={unknownTechnicalSkills} style={styles.size} alt='img'></img>
                                 </MDBAnimation>
                         }
                     </MDBCol>

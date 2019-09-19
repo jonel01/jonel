@@ -147,7 +147,7 @@ render(){
                         </MDBRow>
                         <MDBRow md="12">
                             <MDBAnimation type="bounceInDown" delay="1s">
-                                <img src={ unknownData } style={styles.unknownDataStyle}></img>
+                                <img src={ unknownData } style={styles.unknownDataStyle} alt='img'></img>
                             </MDBAnimation>
                         </MDBRow>
                     </MDBContainer>
@@ -206,7 +206,7 @@ render(){
                         <MDBAnimation type="fadeInUp" delay="1.6s">
                                 {
                             images.map(imageItems =>(
-                                <img src={imageItems.image} style={styles.imgStyle}></img>
+                                <img src={imageItems.image} style={styles.imgStyle} alt='img'></img>
                             ))
                                 }
                         </MDBAnimation>

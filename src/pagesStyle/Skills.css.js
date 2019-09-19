@@ -25,12 +25,16 @@ export const styles = {
         backgroundColor: 'black'
     },
     skillsContainer: {
-        marginTop: '100px'  
+        marginTop: '100px'
     },
     skillsStyle: {
         backgroundColor: 'black',
         opacity: '0.8'
     },
-    
+    text: {
+        marginLeft: '20px',
+        paddingTop: '3px',
+        paddingBottom: '25px'
+    }
     
 }

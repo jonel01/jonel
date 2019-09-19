@@ -11,3 +11,20 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   }
+.controls-top{
+  margin-left: 435px;
+  margin-bottom: 30px
+}
+.controls-top a{
+  background-color: #91afd0;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px;
+}
+.carousel-indicators {
+  position: unset !important;
+}
+.carousel-indicators li{
+  background-color: black !important;
+  font-size: 20px !important;
+}
