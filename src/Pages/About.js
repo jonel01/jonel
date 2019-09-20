@@ -14,7 +14,9 @@ export default class About extends PureComponent{
             <MDBContainer style={styles.container}>
                 <MDBRow md='12'>
                     <MDBCol md='6' style={styles.aboutMe}>
-                        <h1 style={styles.aboutMeText}>ABOUT ME!</h1>
+                        <MDBAnimation type='zoomIn' delay='0.5s'>
+                            <h1 style={styles.aboutMeText}>ABOUT ME!</h1>
+                        </MDBAnimation>
                     </MDBCol>
                     <MDBCol md='6'>
                         <img src={profileImage} style={styles.imageProfile} alt='img'></img>

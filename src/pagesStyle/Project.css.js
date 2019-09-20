@@ -18,5 +18,8 @@ export const styles = {
         marginTop: '-555px',
         marginLeft: '700px',
     },
+    view: {
+        backgroundColor: 'black'
+    }
 }
 
