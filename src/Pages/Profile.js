@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import profileImage from '../assets/image/profile.jpg';
+import profileImage from '../assets/image/myprofile.jpg';
 import unknownImage from '../assets/image/unknown.jpeg';
 import unknownData from '../assets/image/unknowndata.png';
 import Typed from 'react-typed';
@@ -160,7 +160,7 @@ render(){
         <MDBRow style={styles.btnViewInfo}>
             <Button 
                 type="submit" 
-                color="info" 
+                color="indigo" 
                 size="lg"
                 onClickBtn={this.btnTypedHandlerHide}
                 btnText='Hide Info'

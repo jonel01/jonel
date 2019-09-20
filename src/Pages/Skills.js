@@ -96,7 +96,7 @@ export default class Skills extends PureComponent{
                             visible ?
                             <MDBContainer style={styles.skillsStyle}>
                                 {
-                                    <MDBAnimation type="slideInLeft" delay="1s">
+                                    <MDBAnimation style={styles.text} type="slideInLeft" delay="0s">
                                         {
                                             skills.map(item =>(
                                                 <MDBRow md='6' style={styles.marginSkills}>{item.skill}</MDBRow>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol, MDBAnimation } from 'mdbreact';
 
-const Card = ({imgSrc, cardTitle, cardText, btnText, md, style, type, delay}) => {
+const Card = ({imgSrc, cardTitle, cardText, btnText, md, style, type, delay, onBtnCardClick}) => {
     return (
         <MDBCol md={md} style={style}>
             <MDBAnimation type={type} delay={delay}>
@@ -12,7 +12,7 @@ const Card = ({imgSrc, cardTitle, cardText, btnText, md, style, type, delay}) =>
                         <MDBCardText>
                         {cardText}
                         </MDBCardText>
-                        <MDBBtn href="#">{btnText}</MDBBtn>
+                        <MDBBtn href="#" onClick={onBtnCardClick}>{btnText}</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
             </MDBAnimation>
