@@ -28,7 +28,7 @@ class Projects extends PureComponent {
                     isLoading: false,
                 })
             }
-        }, 1);
+        }, 50);
     }
 
     componentWillUnmount = () => {
@@ -86,7 +86,6 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomOut'
                                                     md='4'
-                                                    style={styles.display}
                                                     imgSrc={easytrip}
                                                     cardTitle='Easytrip Mobile App'
                                                     cardText= 'The Easytrip tag provides an interoperable service for payment of toll fees in NLEX. It also comes with an Easytrip Card to be used for electronic payment for road merchant services such as restaurants, car parks and gasoline stations.'
@@ -95,7 +94,6 @@ class Projects extends PureComponent {
                                                 />
                                                 </MDBContainer>
                                                 :
-                                                
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.2s'
