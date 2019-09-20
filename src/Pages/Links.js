@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
 import { styles } from '../pagesStyle/Links.css';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBNavItem, MDBNavLink} from 'mdbreact';
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBNavItem, MDBNavLink, MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem} from 'mdbreact';
 
 class Links extends PureComponent {
-    
     render(){
         return(
             <MDBNavbar color="indigo" dark expand="md" fixed="top">
@@ -24,6 +23,16 @@ class Links extends PureComponent {
                   </MDBNavItem>
                   <MDBNavItem>
                       <MDBNavLink style={styles.navLink} exact to='/projects' activeStyle={{ color: 'yellow' }}>Projects</MDBNavLink>
+                  </MDBNavItem>
+                  <MDBNavItem>
+                        <MDBDropdown>
+                            <MDBDropdownToggle nav caret exact to='/activity'>
+                                <span className="mr-2">Activity</span>
+                            </MDBDropdownToggle>
+                            <MDBDropdownMenu>
+                                <MDBDropdownItem exact to='/activity'>Redux</MDBDropdownItem>
+                            </MDBDropdownMenu>
+                        </MDBDropdown>
                   </MDBNavItem>
               </MDBNavbarNav>
            
