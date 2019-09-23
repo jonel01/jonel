@@ -8,9 +8,12 @@ export const styles = {
     imageContainer: {
         backgroundColor: 'black',
         opacity: '0.7',
-        marginTop: '0px',
         marginBottom: '50px',
-        marginLeft: '100px'
+        marginLeft: '100px',
+        borderLeft: 'solid',
+        borderRight: 'solid',
+        borderBottom: 'solid',
+        paddingBottom: '30px',
     },
     imgStyle: {
         height: '150px',
@@ -20,10 +23,11 @@ export const styles = {
         width: '250px'
     },
     imageText: {
-        color: 'white',
+        color: '#a7ccde',
         fontWeight: 'bold',
         marginLeft: '350px',
-        marginTop: '20px'
+        marginTop: '20px',
+        paddingBottom: '10px',
     },
     info: {
         marginLeft: '-80px',
@@ -43,12 +47,16 @@ export const styles = {
         marginTop: '10px',
         marginLeft: '-230px',
         opacity: '0.8',
-        width: '800px'
+        width: '800px',
+        border: 'solid 5px darkslategray',
+        borderRadius: '10px',
     },
     profileImg: {
         height: '150px',
         marginLeft: '-10px',
         width: '150px',
+        borderRadius: '20px',
+        border: 'solid 5px darkslategray'
     },
     revealPhoto: {
         fontSize: '8',
@@ -77,6 +85,7 @@ export const styles = {
         marginTop: '20px',
         marginLeft: '100px',
         opacity: '0.6',
+        border: 'solid',
     },
     unknownDataStyle: {
         height: '120px',

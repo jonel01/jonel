@@ -13,6 +13,7 @@ export const styles = {
     paddingCardCenter: {
         marginTop: '-555px',
         marginLeft: '350px',
+        borderRadius: '20px'
     },
     paddingCardRight: {
         marginTop: '-555px',

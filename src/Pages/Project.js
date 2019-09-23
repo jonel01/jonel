@@ -100,6 +100,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.2s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     md='4'
                                                     imgSrc={easytrip}
                                                     cardTitle='Easytrip Mobile App'
@@ -139,6 +142,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.3s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardCenter}
                                                     md='4'
                                                     imgSrc={easytrip}
@@ -179,6 +185,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.4s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardRight}
                                                     md='4'
                                                     imgSrc={replacement}
@@ -220,6 +229,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.2s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     md='4'
                                                     imgSrc={vwinreplacement}
                                                     cardTitle='Vwin Baby Admin'
@@ -259,6 +271,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.3s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardCenter}
                                                     md='4'
                                                     imgSrc={vwinreplacement}
@@ -299,9 +314,12 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.4s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardRight}
                                                     md='4'
-                                                    imgSrc={bliimo}
+                                                    imgSrc={replacement}
                                                     cardTitle='Bliimo Website'
                                                     cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                     btnText= 'View More'

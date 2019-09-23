@@ -32,7 +32,8 @@ export const styles = {
     imageProfile: {
         height: '100px',
         width: '100px',
-        border: 'solid 4px'
+        border: 'solid 4px',
+        borderRadius: '20px'
     },
     instaPos: {
         marginLeft: '25px'

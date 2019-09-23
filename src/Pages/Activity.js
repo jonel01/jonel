@@ -6,31 +6,43 @@ import { connect } from 'react-redux';
 import Button from '../Components/Button';
 
 class Activity extends Component {
-    state = {
-        counter: 0
-    }
     render() {
+        const { onIncrementCounter, onDecrementCounter, onAddCounter, onSubtractCounter, ctr } = this.props        
         return (
-            <MDBContainer style={styles.pos}>
+            <MDBContainer style={styles.btnCounterContainer}>
+                <Text
+                    text='Counter Button Using Redux'
+                    color='white'
+                    fontSize='30px'
+                    fontWeight='bold'
+                    marginLeft='100px'
+                />
                 <Button 
-                    onClickBtn={this.increaseHandler}
+                    onClickBtn={() => onIncrementCounter()}
                     color='primary'
                     btnText='Increment'
                 />
                 <Button 
-                    onClickBtn={this.increaseHandler}
-                    color='primary'
+                    onClickBtn={() => onDecrementCounter()}
+                    color='danger'
                     btnText='Decrement'
                 />
                 <Button 
-                    onClickBtn={this.increaseHandler}
+                    onClickBtn={() => onAddCounter()}
                     color='primary'
                     btnText='Add 5'
                 />
                 <Button 
-                    onClickBtn={this.increaseHandler}
-                    color='primary'
+                    onClickBtn={() => onSubtractCounter()}
+                    color='danger'
                     btnText='Subtract 5'
+                />
+                <Text
+                    text={ctr}
+                    color='white'
+                    fontSize='50px'
+                    fontWeight='bold'
+                    marginLeft='280px'
                 />
             </MDBContainer>
         )
@@ -41,5 +53,12 @@ const mapStateToProps = state => {
         ctr: state.counter
     }
 }
-
-export default connect(mapStateToProps)(Activity)
+const mapDispatchToProps = dispatch => {
+    return {
+        onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
+        onDecrementCounter: () => dispatch({type: 'DECREMENT'}),
+        onAddCounter: () => dispatch({type: 'ADD'}),
+        onSubtractCounter: () => dispatch({type: 'SUBTRACT'})
+    }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Activity)
