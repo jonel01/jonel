@@ -6,7 +6,7 @@ export const styles = {
         marginTop: '120px',
     },
     imageContainer: {
-        backgroundColor: 'rgb(29, 5, 5)',
+        backgroundColor: 'black',
         opacity: '0.7',
         marginTop: '0px',
         marginBottom: '50px',

@@ -4,7 +4,7 @@ export const styles = {
         height: '250px',
     },
     aboutMeText: {
-        color: '#212529',
+        color: '#828282',
         fontWeight: 'bold',
         fontSize: '95px',
         fontFamily: 'fantasy',
@@ -20,7 +20,8 @@ export const styles = {
         marginTop: '-90px',
         marginLeft: '100px',
         fontSize: '20px',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: '#828282'
     },
     fbPos: {
         marginLeft: '20px'
@@ -48,7 +49,7 @@ export const styles = {
     textLogo: {
         fontSize: '26px',
         fontWeight: 'bold',
-        color: '#97d081'
+        color: 'rgb(171, 0, 0)'
     },
     size: {
         height: '180px',

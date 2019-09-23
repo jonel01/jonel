@@ -5,7 +5,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav,MDBNavItem, MDBNavLink, MDBDrop
 class Links extends PureComponent {
     render(){
         return(
-            <MDBNavbar color="indigo" dark expand="md" fixed="top">
+            <MDBNavbar color="transparent" dark expand="md" fixed="top">
                 
               <MDBNavbarBrand to="/">
                   <MDBNavLink style={styles.navLink} exact to='/'><strong>My Portfolio</strong></MDBNavLink>
@@ -26,11 +26,11 @@ class Links extends PureComponent {
                   </MDBNavItem>
                   <MDBNavItem>
                         <MDBDropdown>
-                            <MDBDropdownToggle nav caret exact to='/activity'>
+                            <MDBDropdownToggle nav caret>
                                 <span className="mr-2">Activity</span>
                             </MDBDropdownToggle>
                             <MDBDropdownMenu>
-                                <MDBDropdownItem exact to='/activity'>Redux</MDBDropdownItem>
+                                <MDBDropdownItem style={styles.color}><MDBNavLink style={styles.navLink} exact to='/activityRedux' activeStyle={{ color: 'yellow' }}>Redux</MDBNavLink></MDBDropdownItem>
                             </MDBDropdownMenu>
                         </MDBDropdown>
                   </MDBNavItem>

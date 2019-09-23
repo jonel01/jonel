@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { styles } from '../pagesStyle/About.css'
 import { MDBContainer, MDBRow, MDBCol, MDBAnimation } from "mdbreact";
-import profileImage from '../assets/image/profile.jpg';
+import profileImage from '../assets/image/myprofile.jpg';
 import reactJSLOGO from '../assets/image/reactJSLogo.jpg';
 import facebookLOGO from '../assets/image/facebookLogo.png';
 import instagramLOGO from '../assets/image/instagramLogo.jpeg';
