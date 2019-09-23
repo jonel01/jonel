@@ -18,5 +18,8 @@ export const styles = {
     },
     pos: {
         marginLeft: '1150px'
+    },
+    color: {
+        backgroundColor: 'black '
     }
 }

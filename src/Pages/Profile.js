@@ -179,6 +179,8 @@ render(){
         :
         <MDBRow style={styles.btnViewInfo}>
             <Button 
+                borderRadius= '20px'
+                marginLeft= '6px'
                 type="submit" 
                 color="info" 
                 size="lg"

@@ -29,7 +29,9 @@ export const styles = {
     },
     skillsStyle: {
         backgroundColor: 'black',
-        opacity: '0.8'
+        opacity: '0.8',
+        border: 'solid 5px gray',
+        borderRadius: '10px',
     },
     text: {
         marginLeft: '20px',

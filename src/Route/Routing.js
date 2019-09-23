@@ -5,6 +5,7 @@ import About from '../Pages/About';
 import Skills from '../Pages/Skills';
 import Links from '../Pages/Links';
 import Projects from '../Pages/Project';
+import Activity from '../Pages/Activity';
 
 export default class Routing extends PureComponent {
     render() {
@@ -15,6 +16,7 @@ export default class Routing extends PureComponent {
                     <Route exact path='/about' component={ About } />
                     <Route exact path='/skills' component={ Skills } />
                     <Route exact path='/projects' component={ Projects } />
+                    <Route exact path='/activityRedux' component={ Activity } />
             </Router>
         )
     }

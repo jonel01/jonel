@@ -5,6 +5,9 @@ import ProgressBar from '../Components/ProgressBar';
 import Card from '../Components/Card';
 import easytrip from '../assets/image/easytrip.png';
 import replacement from '../assets/image/replacement.jpeg';
+import vwinreplacement from '../assets/image/vwinreplacement.jpg';
+import bliimo from '../assets/image/bliimo.jpg';
+
 import Modal from '../Components/Modal';
 
 class Projects extends PureComponent {
@@ -97,6 +100,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.2s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     md='4'
                                                     imgSrc={easytrip}
                                                     cardTitle='Easytrip Mobile App'
@@ -136,6 +142,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.3s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardCenter}
                                                     md='4'
                                                     imgSrc={easytrip}
@@ -176,6 +185,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.4s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardRight}
                                                     md='4'
                                                     imgSrc={replacement}
@@ -206,7 +218,7 @@ class Projects extends PureComponent {
                                                     <Card
                                                         type='zoomOut'
                                                         md='4'
-                                                        imgSrc={replacement}
+                                                        imgSrc={vwinreplacement}
                                                         cardTitle='Vwin Baby Admin'
                                                         cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                         btnText= 'View More'
@@ -217,8 +229,11 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.2s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     md='4'
-                                                    imgSrc={replacement}
+                                                    imgSrc={vwinreplacement}
                                                     cardTitle='Vwin Baby Admin'
                                                     cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                     btnText= 'View More'
@@ -245,7 +260,7 @@ class Projects extends PureComponent {
                                                         type='zoomOut'
                                                         style={styles.paddingCardCenter}
                                                         md='4'
-                                                        imgSrc={replacement}
+                                                        imgSrc={vwinreplacement}
                                                         cardTitle='Vwin Baby Mobile'
                                                         cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                         btnText= 'View More'
@@ -256,9 +271,12 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.3s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardCenter}
                                                     md='4'
-                                                    imgSrc={replacement}
+                                                    imgSrc={vwinreplacement}
                                                     cardTitle='Vwin Baby Mobile'
                                                     cardText= 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
                                                     btnText= 'View More'
@@ -296,6 +314,9 @@ class Projects extends PureComponent {
                                                 <Card
                                                     type='zoomIn'
                                                     delay='1.4s'
+                                                    border='solid 15px darkslategray'
+                                                    borderRadius= '20px'
+                                                    height= '557px'
                                                     style={styles.paddingCardRight}
                                                     md='4'
                                                     imgSrc={replacement}
