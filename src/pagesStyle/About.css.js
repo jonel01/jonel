@@ -50,11 +50,12 @@ export const styles = {
     textLogo: {
         fontSize: '26px',
         fontWeight: 'bold',
-        color: 'rgb(171, 0, 0)'
+        color: 'rgb(0, 171, 171)'
     },
     size: {
         height: '180px',
         width: '180px',
-        borderRadius:'120px'
+        borderRadius:'120px',
+        border: 'solid 5px darkslategray'
     },
 }

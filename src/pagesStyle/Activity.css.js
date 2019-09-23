@@ -4,7 +4,8 @@ export const styles = {
         marginLeft: '350px',
         backgroundColor: 'black',
         paddingTop: '10px',
-        width: '610px',
-        borderRadius: '10px'
+        width: '620px',
+        borderRadius: '10px',
+        border: 'solid',
     }
 }
