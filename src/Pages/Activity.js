@@ -4,6 +4,7 @@ import { MDBContainer, MDBAnimation, MDBRow } from 'mdbreact';
 import { styles } from '../pagesStyle/Activity.css';
 import { connect } from 'react-redux';
 import Button from '../Components/Button';
+import * as actionTypes from '../store/action';
 
 class Activity extends Component {
     render() {
@@ -47,7 +48,7 @@ class Activity extends Component {
                         marginLeft='280px'
                     />
                     <Button 
-                        onClickBtn={() => onStoreResult()}
+                        onClickBtn={() => onStoreResult(this.props.ctr)}
                         color='danger'
                         btnText='Store Result'
                     />
@@ -64,18 +65,18 @@ class Activity extends Component {
 }
 const mapStateToProps = state => {
     return{
-        ctr: state.counter,
-        storedResults: state.results
+        ctr: state.ctr.counter,
+        storedResults: state.res.results
     }
 }
 const mapDispatchToProps = dispatch => {
     return {
-        onIncrementCounter: () => dispatch({type: 'INCREMENT'}),
-        onDecrementCounter: () => dispatch({type: 'DECREMENT'}),
-        onAddCounter: () => dispatch({type: 'ADD', val: 5}),
-        onSubtractCounter: () => dispatch({type: 'SUBTRACT', val: 5}),
-        onStoreResult: () => dispatch({type: 'STORE_RESULT'}),
-        onDeleteResult: (id) => dispatch({type: 'DELETE_RESULT', resultElId: id})
+        onIncrementCounter: () => dispatch({type: actionTypes.INCREMENT}),
+        onDecrementCounter: () => dispatch({type: actionTypes.DECREMENT}),
+        onAddCounter: () => dispatch({type: actionTypes.ADD, val: 5}),
+        onSubtractCounter: () => dispatch({type: actionTypes.SUBTRACT, val: 5}),
+        onStoreResult: (result) => dispatch({type: actionTypes.STORE_RESULT, result: result}),
+        onDeleteResult: (id) => dispatch({type: actionTypes.DELETE_RESULT, resultElId: id})
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Activity)
