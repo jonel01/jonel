@@ -1,12 +1,11 @@
 import React from 'react';
+import { MDBContainer } from 'mdbreact';
 import Routing from '../Route/Routing';
-import { MDBContainer } from 'mdbreact'
 
-export const Navbar = () => {
-    return(
-        <MDBContainer>
-            <Routing />
-        </MDBContainer>
-    );
+const Navbar = () => (
+  <MDBContainer>
+    <Routing />
+  </MDBContainer>
+);
 
-}
+export default Navbar;
