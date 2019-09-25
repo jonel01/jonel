@@ -1,24 +1,25 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { MDBBtn } from 'mdbreact';
 
-const Button = ({btnText, onClickBtn, type, color, size, borderRadius, marginLeft, border}) => {
-    return (
-        <MDBBtn
-            onClick={onClickBtn}
-            type={type}
-            color={color}
-            size={size}
-            style={{
-                color: color,
-                size: size, 
-                borderRadius: borderRadius, 
-                marginLeft: marginLeft,
-                border: border
-            }}
-        >
-            {btnText}
-        </MDBBtn>
-    )
-}
+const Button = ({
+  btnText, onClickBtn, type, color, size, borderRadius, marginLeft, border,
+}) => (
+  <MDBBtn
+    onClick={onClickBtn}
+    type={type}
+    color={color}
+    size={size}
+    style={{
+      color,
+      size,
+      borderRadius,
+      marginLeft,
+      border,
+    }}
+  >
+    {btnText}
+  </MDBBtn>
+);
 
-export default Button
+export default Button;

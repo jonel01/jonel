@@ -1,15 +1,10 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true
-    },
+    "parser": "babel-eslint",
+    
     "extends": [
         "airbnb"
     ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -17,9 +12,24 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
+    },
+
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    
     "plugins": [
         "react"
     ],
     "rules": {
+        "react/jsx-filename-extension": [1, {"extensions": [".js",".jsx"]}],
+        "react/no-this-in-sfc": 0,
+        "react/destructuring-assignment": 0,
+        "react/jsx-one-expression-per-line": 0
     }
 }
