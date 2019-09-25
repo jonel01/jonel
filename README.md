@@ -69,4 +69,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 after cloning the repository:
 1. npm install
-2. npm run
+2. npm start
