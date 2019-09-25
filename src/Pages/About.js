@@ -24,10 +24,10 @@ export default class About extends PureComponent {
             <img src={profileImage} style={styles.imageProfile} alt="img" />
             <MDBContainer style={styles.description}>
               <Typed
-                strings={['I\'m Jonel M. San Diego. Currently living in Abulalas, Hagonoy, Bulacan.']}
+                strings={['I\'m Jonel M. San Diego. Currently living in #74 Zone 4 Abulalas, Hagonoy, Bulacan. I have an experienced of being a front-end developer. I also have a portfolio in my repository on Github and i love dogs because they are the one who loves you more than he/she loves him/herself.']}
                 typeSpeed={30}
                 backSpeed={20}
-                backDelay={10000}
+                backDelay={12000}
                 loop
                 startDelay={2000}
               />
