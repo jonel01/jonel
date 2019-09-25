@@ -30,12 +30,38 @@ class Activity extends PureComponent {
       <MDBRow md="12">
         <MDBContainer style={styles.btnCounterContainer}>
           <Text text="Counter Button Using Redux" color="white" fontSize="30px" fontWeight="bold" marginLeft="100px" />
-          <Button onClickBtn={() => onIncrementCounter()} color="primary" btnText="Increment" />
-          <Button onClickBtn={() => onDecrementCounter()} color="danger" btnText="Decrement" />
-          <Button onClickBtn={() => onAddCounter()} color="primary" btnText="Add 5" />
-          <Button onClickBtn={() => onSubtractCounter()} color="danger" btnText="Subtract 5" />
-          <Text text={ctr} color="white" fontSize="50px" fontWeight="bold" marginLeft="280px" />
-          <Button onClickBtn={() => onStoreResult(this.props.ctr)} color="danger" btnText="Store Result" />
+          <Button
+            onClickBtn={() => onIncrementCounter()}
+            color="primary"
+            btnText="Increment"
+          />
+          <Button
+            onClickBtn={() => onDecrementCounter()}
+            color="danger"
+            btnText="Decrement"
+          />
+          <Button
+            onClickBtn={() => onAddCounter()}
+            color="primary"
+            btnText="Add 5"
+          />
+          <Button
+            onClickBtn={() => onSubtractCounter()}
+            color="danger"
+            btnText="Subtract 5"
+          />
+          <Text
+            text={ctr}
+            color="white"
+            fontSize="50px"
+            fontWeight="bold"
+            marginLeft="280px"
+          />
+          <Button
+            onClickBtn={() => onStoreResult(this.props.ctr)}
+            color="danger"
+            btnText="Store Result"
+          />
           <ul>{storedResults.map((strResult) => (<li key={strResult.id} onClick={() => onDeleteResult(strResult.id)}>
             {strResult.value}
           </li>))}
