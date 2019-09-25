@@ -1,10 +1,9 @@
-/* eslint-disable max-len */
-/* eslint-disable arrow-body-style */
 /* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
-/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-wrap-multilines */
+/* eslint-disable max-len */
+/* eslint-disable react/prop-types */
 import React, { PureComponent } from 'react';
 import { MDBContainer, MDBAnimation, MDBRow } from 'mdbreact';
 import { connect } from 'react-redux';
