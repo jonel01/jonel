@@ -1,15 +1,16 @@
 /* eslint-disable import/prefer-default-export */
 export const styles = {
-  btnCounterContainer: {
-    marginTop: '90px',
-    marginLeft: '350px',
+  dataContainer: {
+    marginTop: '100px',
+    marginLeft: '90px',
     backgroundColor: 'black',
     paddingTop: '10px',
-    width: '620px',
     borderRadius: '10px',
     border: 'solid',
   },
-  ulList: {
-    listStyle: 'none',
+  dataUsersContainer: {
+    marginBottom: '20px',
+    marginLeft: '30px',
+    width: '1000px',
   },
 };

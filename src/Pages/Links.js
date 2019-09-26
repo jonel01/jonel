@@ -33,7 +33,8 @@ class Links extends PureComponent {
                 <span className="mr-2">Activity</span>
               </MDBDropdownToggle>
               <MDBDropdownMenu>
-                <MDBDropdownItem style={styles.color}><MDBNavLink style={styles.navLink} exact to="/activityRedux" activeStyle={{ color: 'yellow' }}>Redux</MDBNavLink></MDBDropdownItem>
+                <MDBDropdownItem style={styles.color}><MDBNavLink style={styles.navLink} exact to="/activityRedux" activeStyle={{ color: 'yellow' }}>Redux Button</MDBNavLink></MDBDropdownItem>
+                <MDBDropdownItem style={styles.color}><MDBNavLink style={styles.navLink} exact to="/activityReduxFetching" activeStyle={{ color: 'yellow' }}>Fetching Users</MDBNavLink></MDBDropdownItem>
               </MDBDropdownMenu>
             </MDBDropdown>
           </MDBNavItem>
