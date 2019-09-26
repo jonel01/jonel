@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/jonel/static/css/main.6ad0a0e9.chunk.css",
+    "main.js": "/jonel/static/js/main.2ddaebb5.chunk.js",
+    "main.js.map": "/jonel/static/js/main.2ddaebb5.chunk.js.map",
+    "runtime~main.js": "/jonel/static/js/runtime~main.11bbb7f0.js",
+    "runtime~main.js.map": "/jonel/static/js/runtime~main.11bbb7f0.js.map",
+    "static/css/2.f65baf74.chunk.css": "/jonel/static/css/2.f65baf74.chunk.css",
+    "static/js/2.f42f4592.chunk.js": "/jonel/static/js/2.f42f4592.chunk.js",
+    "static/js/2.f42f4592.chunk.js.map": "/jonel/static/js/2.f42f4592.chunk.js.map",
+    "index.html": "/jonel/index.html",
+    "precache-manifest.daeb353cfe8c676684efda31627a0b7f.js": "/jonel/precache-manifest.daeb353cfe8c676684efda31627a0b7f.js",
+    "service-worker.js": "/jonel/service-worker.js",
+    "static/css/2.f65baf74.chunk.css.map": "/jonel/static/css/2.f65baf74.chunk.css.map",
+    "static/css/main.6ad0a0e9.chunk.css.map": "/jonel/static/css/main.6ad0a0e9.chunk.css.map",
+    "static/media/React-logo.png": "/jonel/static/media/React-logo.74b6832f.png",
+    "static/media/mdb.css": "/jonel/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/easytrip.png": "/jonel/static/media/easytrip.5dae7241.png",
+    "static/media/all.min.css": "/jonel/static/media/fa-solid-900.d6d8d5da.woff2",
+    "static/media/facebookLogo.png": "/jonel/static/media/facebookLogo.abb1a392.png",
+    "static/media/frontendLogo.jpg": "/jonel/static/media/frontendLogo.8b75175b.jpg",
+    "static/media/instagramLogo.jpeg": "/jonel/static/media/instagramLogo.b24658bd.jpeg",
+    "static/media/myprofile.jpg": "/jonel/static/media/myprofile.71eedc72.jpg",
+    "static/media/npmjs.png": "/jonel/static/media/npmjs.51f808e8.png",
+    "static/media/reactJSLogo.jpg": "/jonel/static/media/reactJSLogo.89dae33d.jpg",
+    "static/media/replacement.jpeg": "/jonel/static/media/replacement.2225c35b.jpeg",
+    "static/media/stackoverflow.png": "/jonel/static/media/stackoverflow.be2ec79c.png",
+    "static/media/unknown.jpeg": "/jonel/static/media/unknown.cdbb265e.jpeg",
+    "static/media/unknowntechnicalskills.jpg": "/jonel/static/media/unknowntechnicalskills.a6984abc.jpg",
+    "static/media/vwinreplacement.jpg": "/jonel/static/media/vwinreplacement.f2740790.jpg",
+    "static/media/youtube.jpg": "/jonel/static/media/youtube.b99bd5a8.jpg"
+  }
+}
